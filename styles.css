@@ -36,12 +36,21 @@ h1 {
 #pin-form button {
     width: 100%;
     padding: 10px;
-    background-color: #0f00e5;
+    background-color: #0f00e5; /* Default button color */
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+/* Change button color based on PIN validity */
+#pin-form button.correct {
+    background-color: #45a049; /* Green for correct PIN */
+}
+
+#pin-form button.incorrect {
+    background-color: #0f00e5; /* Blue for incorrect PIN */
 }
 
 #pin-form button:hover {
